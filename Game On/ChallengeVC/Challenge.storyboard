@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Challenge ChildVC-->
+        <scene sceneID="yRn-md-fdz">
+            <objects>
+                <viewController storyboardIdentifier="myChallenge" id="YC5-WG-boa" customClass="MyChallengeChildVC" customModule="Game_On" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eVE-0B-Nan">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Challenge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oP-OI-7h0">
+                                <rect key="frame" x="135.5" y="323" width="104.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2oP-OI-7h0" firstAttribute="centerX" secondItem="eVE-0B-Nan" secondAttribute="centerX" id="3ra-Ks-bCQ"/>
+                            <constraint firstItem="2oP-OI-7h0" firstAttribute="centerY" secondItem="eVE-0B-Nan" secondAttribute="centerY" id="M3P-Td-ZbK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5Vi-L5-3Qm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OZ0-5v-XhA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-687" y="1816"/>
+        </scene>
+        <!--Challenge Invite ChildVC-->
+        <scene sceneID="cGz-D7-3uL">
+            <objects>
+                <viewController storyboardIdentifier="challengeInvites" id="via-cZ-o0b" customClass="ChallengeInviteChildVC" customModule="Game_On" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pwQ-qF-HuR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Challenge Invites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8C-gM-cgd">
+                                <rect key="frame" x="122.5" y="323" width="130.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g8C-gM-cgd" firstAttribute="centerY" secondItem="pwQ-qF-HuR" secondAttribute="centerY" id="8eg-9x-4M0"/>
+                            <constraint firstItem="g8C-gM-cgd" firstAttribute="centerX" secondItem="pwQ-qF-HuR" secondAttribute="centerX" id="gG7-8X-6vf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8xb-ae-HRp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VCO-ld-GEb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="788" y="1816"/>
+        </scene>
+        <!--My Matches ChildVC-->
+        <scene sceneID="Qwc-wM-83m">
+            <objects>
+                <viewController storyboardIdentifier="myMatches" id="JIC-Jl-b3A" customClass="MyMatchesChildVC" customModule="Game_On" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L3e-gb-9d2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Matches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLT-42-9DB">
+                                <rect key="frame" x="141" y="323" width="93.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dLT-42-9DB" firstAttribute="centerX" secondItem="L3e-gb-9d2" secondAttribute="centerX" id="8Lj-W6-uc9"/>
+                            <constraint firstItem="dLT-42-9DB" firstAttribute="centerY" secondItem="L3e-gb-9d2" secondAttribute="centerY" id="oU2-eo-N2I"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Ee-ta-wCf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H7J-FH-G79" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55" y="1821"/>
+        </scene>
+    </scenes>
+</document>
