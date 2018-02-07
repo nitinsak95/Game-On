@@ -130,49 +130,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cW-Ke-SYV">
-                                <rect key="frame" x="39" y="20" width="336" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.32156862749999998" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zVS-nw-Hzc">
+                                <rect key="frame" x="0.0" y="20" width="375" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dC5-uj-4d4">
+                                        <rect key="frame" x="8" y="0.0" width="359" height="40"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Notification">
+                                                <attributes>
+                                                    <font key="NSFont" size="27" name="SignPainter-HouseScript"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5y-fG-JcQ">
+                                        <rect key="frame" x="347" y="10" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="4F9-m2-X0I"/>
+                                            <constraint firstAttribute="width" constant="20" id="J1E-c7-ubW"/>
+                                        </constraints>
+                                        <state key="normal" image="icon_cross"/>
+                                        <connections>
+                                            <action selector="btBack:" destination="9Nc-AF-jeA" eventType="touchUpInside" id="T5d-9C-8I6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.66666666669999997" green="0.66666668650000005" blue="0.66666668650000005" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="QIt-xn-6dD"/>
-                                    <constraint firstAttribute="width" constant="336" id="TZT-ed-1aF"/>
+                                    <constraint firstAttribute="height" constant="40" id="41J-fc-wmV"/>
+                                    <constraint firstAttribute="trailing" secondItem="t5y-fG-JcQ" secondAttribute="trailing" constant="8" id="AEc-kJ-gBE"/>
+                                    <constraint firstItem="t5y-fG-JcQ" firstAttribute="top" secondItem="zVS-nw-Hzc" secondAttribute="top" constant="10" id="Cjz-mk-kCH"/>
+                                    <constraint firstAttribute="trailing" secondItem="dC5-uj-4d4" secondAttribute="trailing" constant="8" id="YC3-nY-0kn"/>
+                                    <constraint firstItem="dC5-uj-4d4" firstAttribute="top" secondItem="zVS-nw-Hzc" secondAttribute="top" id="c7A-xw-cpr"/>
+                                    <constraint firstAttribute="bottom" secondItem="dC5-uj-4d4" secondAttribute="bottom" id="cvg-ED-2cb"/>
+                                    <constraint firstItem="dC5-uj-4d4" firstAttribute="leading" secondItem="zVS-nw-Hzc" secondAttribute="leading" constant="8" id="rf1-Gm-lqX"/>
                                 </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Notifications">
-                                        <attributes>
-                                            <font key="NSFont" size="31" name="SignPainter-HouseScript"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRF-B7-1Bt">
-                                <rect key="frame" x="0.0" y="20" width="40" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.32156862749999998" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="OQe-JC-OiD"/>
-                                    <constraint firstAttribute="width" constant="40" id="bNN-c2-CIU"/>
-                                </constraints>
-                                <state key="normal" image="icon_back"/>
-                                <connections>
-                                    <action selector="btBack:" destination="9Nc-AF-jeA" eventType="touchUpInside" id="nUZ-Gi-8WV"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4cW-Ke-SYV" firstAttribute="trailing" secondItem="rDw-r2-lRJ" secondAttribute="trailing" id="Cjc-Uc-WjD"/>
-                            <constraint firstItem="yRF-B7-1Bt" firstAttribute="leading" secondItem="rDw-r2-lRJ" secondAttribute="leading" id="Vsq-GP-KQM"/>
-                            <constraint firstItem="yRF-B7-1Bt" firstAttribute="top" secondItem="rDw-r2-lRJ" secondAttribute="top" id="ctl-i7-TIq"/>
-                            <constraint firstItem="4cW-Ke-SYV" firstAttribute="top" secondItem="rDw-r2-lRJ" secondAttribute="top" id="dDt-jj-H4S"/>
-                            <constraint firstItem="4cW-Ke-SYV" firstAttribute="leading" secondItem="rDw-r2-lRJ" secondAttribute="leading" constant="39" id="jf5-Dj-zXm"/>
+                            <constraint firstItem="zVS-nw-Hzc" firstAttribute="leading" secondItem="rDw-r2-lRJ" secondAttribute="leading" id="7Lq-4J-Ig9"/>
+                            <constraint firstItem="zVS-nw-Hzc" firstAttribute="top" secondItem="rDw-r2-lRJ" secondAttribute="top" id="mRS-42-cII"/>
+                            <constraint firstItem="zVS-nw-Hzc" firstAttribute="trailing" secondItem="rDw-r2-lRJ" secondAttribute="trailing" id="wCM-kM-3iO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rDw-r2-lRJ"/>
                     </view>
-                    <connections>
-                        <outlet property="btBack" destination="yRF-B7-1Bt" id="Fs8-0o-bpo"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tip-wK-pkM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
