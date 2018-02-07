@@ -19,7 +19,7 @@ class HomeVC: ButtonBarPagerTabStripViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setStatusBarBackgroundColor(color: UIColor(hex:"e53935"))
+        setStatusBarBackgroundColor(color: UIColor(hex:"ff5252"))
         
         settings.style.buttonBarBackgroundColor = .white
         settings.style.buttonBarMinimumInteritemSpacing = 0.0

@@ -131,9 +131,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cW-Ke-SYV">
-                                <rect key="frame" x="16" y="20" width="343" height="43"/>
+                                <rect key="frame" x="39" y="20" width="336" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.32156862749999998" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="43" id="0rn-Bt-ldZ"/>
+                                    <constraint firstAttribute="height" constant="40" id="QIt-xn-6dD"/>
+                                    <constraint firstAttribute="width" constant="336" id="TZT-ed-1aF"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Notifications">
@@ -145,15 +147,32 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRF-B7-1Bt">
+                                <rect key="frame" x="0.0" y="20" width="40" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.32156862749999998" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="OQe-JC-OiD"/>
+                                    <constraint firstAttribute="width" constant="40" id="bNN-c2-CIU"/>
+                                </constraints>
+                                <state key="normal" image="icon_back"/>
+                                <connections>
+                                    <action selector="btBack:" destination="9Nc-AF-jeA" eventType="touchUpInside" id="nUZ-Gi-8WV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4cW-Ke-SYV" firstAttribute="top" secondItem="rDw-r2-lRJ" secondAttribute="top" id="Rn2-Dj-jHz"/>
-                            <constraint firstItem="rDw-r2-lRJ" firstAttribute="trailing" secondItem="4cW-Ke-SYV" secondAttribute="trailing" constant="16" id="eQf-bi-RDt"/>
-                            <constraint firstItem="4cW-Ke-SYV" firstAttribute="leading" secondItem="rDw-r2-lRJ" secondAttribute="leading" constant="16" id="ywd-B8-EUP"/>
+                            <constraint firstItem="4cW-Ke-SYV" firstAttribute="trailing" secondItem="rDw-r2-lRJ" secondAttribute="trailing" id="Cjc-Uc-WjD"/>
+                            <constraint firstItem="yRF-B7-1Bt" firstAttribute="leading" secondItem="rDw-r2-lRJ" secondAttribute="leading" id="Vsq-GP-KQM"/>
+                            <constraint firstItem="yRF-B7-1Bt" firstAttribute="top" secondItem="rDw-r2-lRJ" secondAttribute="top" id="ctl-i7-TIq"/>
+                            <constraint firstItem="4cW-Ke-SYV" firstAttribute="top" secondItem="rDw-r2-lRJ" secondAttribute="top" id="dDt-jj-H4S"/>
+                            <constraint firstItem="4cW-Ke-SYV" firstAttribute="leading" secondItem="rDw-r2-lRJ" secondAttribute="leading" constant="39" id="jf5-Dj-zXm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rDw-r2-lRJ"/>
                     </view>
+                    <connections>
+                        <outlet property="btBack" destination="yRF-B7-1Bt" id="Fs8-0o-bpo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tip-wK-pkM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -173,11 +192,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swv-vh-6Ry">
+                                <rect key="frame" x="0.0" y="20" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="It9-gr-oGw"/>
+                                    <constraint firstAttribute="width" constant="40" id="Sya-Z4-jZN"/>
+                                </constraints>
+                                <state key="normal" image="icon_back"/>
+                                <connections>
+                                    <action selector="btBack:" destination="uM3-iE-WJO" eventType="touchUpInside" id="Bs5-CX-AdL"/>
+                                    <action selector="btBack:" destination="9Nc-AF-jeA" eventType="touchUpInside" id="xaQ-BC-duo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="swv-vh-6Ry" firstAttribute="top" secondItem="sW3-h1-tNH" secondAttribute="top" id="5i1-BU-aUK"/>
                             <constraint firstItem="1yO-2d-Rh7" firstAttribute="centerY" secondItem="lSV-dc-2Mi" secondAttribute="centerY" id="V8z-eC-SkN"/>
                             <constraint firstItem="1yO-2d-Rh7" firstAttribute="centerX" secondItem="lSV-dc-2Mi" secondAttribute="centerX" id="pyO-WA-H7Y"/>
+                            <constraint firstItem="swv-vh-6Ry" firstAttribute="leading" secondItem="sW3-h1-tNH" secondAttribute="leading" id="xZf-vY-2Do"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sW3-h1-tNH"/>
                     </view>
@@ -200,10 +233,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCV-E2-weL">
+                                <rect key="frame" x="0.0" y="20" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="DJP-Lk-ZuN"/>
+                                    <constraint firstAttribute="width" constant="40" id="JDP-4F-Qzs"/>
+                                </constraints>
+                                <state key="normal" image="icon_back"/>
+                                <connections>
+                                    <action selector="btBack:" destination="rW2-Qh-JLR" eventType="touchUpInside" id="0dM-LO-XkE"/>
+                                    <action selector="btBack:" destination="9Nc-AF-jeA" eventType="touchUpInside" id="Vhm-c2-gxF"/>
+                                    <action selector="btBack:" destination="uM3-iE-WJO" eventType="touchUpInside" id="agp-zN-Cm9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="6oj-S2-WOI" firstAttribute="centerY" secondItem="bEg-3b-osA" secondAttribute="centerY" id="BqS-c2-jEE"/>
+                            <constraint firstItem="SCV-E2-weL" firstAttribute="leading" secondItem="jDJ-hb-9KH" secondAttribute="leading" id="QIz-KB-Z1Q"/>
+                            <constraint firstItem="SCV-E2-weL" firstAttribute="top" secondItem="jDJ-hb-9KH" secondAttribute="top" id="USB-XE-3C9"/>
                             <constraint firstItem="6oj-S2-WOI" firstAttribute="centerX" secondItem="bEg-3b-osA" secondAttribute="centerX" id="h97-fd-vx8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jDJ-hb-9KH"/>
@@ -586,11 +634,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cW7-Bg-SrC">
+                                <rect key="frame" x="335" y="20" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="BWY-8J-xtA"/>
+                                    <constraint firstAttribute="width" constant="40" id="iEW-mb-8ZU"/>
+                                </constraints>
+                                <state key="normal" image="icon_cross"/>
+                                <connections>
+                                    <action selector="btBack:" destination="9Nc-AF-jeA" eventType="touchUpInside" id="lVl-W3-964"/>
+                                    <action selector="btBack:" destination="uM3-iE-WJO" eventType="touchUpInside" id="lel-Im-rkH"/>
+                                    <action selector="btCancel:" destination="G9J-zx-Nxp" eventType="touchUpInside" id="R2M-PM-n92"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="cW7-Bg-SrC" firstAttribute="trailing" secondItem="swe-1b-GDS" secondAttribute="trailing" id="9cX-8X-CBh"/>
                             <constraint firstItem="p4R-4X-Y9c" firstAttribute="centerX" secondItem="ev9-yM-YXl" secondAttribute="centerX" id="OoK-dK-I3Z"/>
                             <constraint firstItem="p4R-4X-Y9c" firstAttribute="centerY" secondItem="ev9-yM-YXl" secondAttribute="centerY" id="S6Z-jW-9xj"/>
+                            <constraint firstItem="cW7-Bg-SrC" firstAttribute="top" secondItem="swe-1b-GDS" secondAttribute="top" id="Z2L-AH-TKP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="swe-1b-GDS"/>
                     </view>
@@ -602,7 +665,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icon_back" width="256" height="256"/>
         <image name="icon_challenge" width="20" height="20"/>
+        <image name="icon_cross" width="24" height="24"/>
         <image name="icon_ground" width="20" height="20"/>
         <image name="icon_home" width="20" height="20"/>
         <image name="icon_more" width="25" height="25"/>
