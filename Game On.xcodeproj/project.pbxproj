@@ -44,8 +44,12 @@
 		A461CEF42029B6FD00E275CB /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A461CEF32029B6FD00E275CB /* NotificationsViewController.swift */; };
 		A461CEF62029B72900E275CB /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A461CEF52029B72900E275CB /* ProfileVC.swift */; };
 		A461CEF82029C25000E275CB /* FeedbackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A461CEF72029C25000E275CB /* FeedbackVC.swift */; };
-		A461CEFA2029C26500E275CB /* AppAssistanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A461CEF92029C26500E275CB /* AppAssistanceVC.swift */; };
 		A461CEFC2029C27400E275CB /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A461CEFB2029C27400E275CB /* AboutVC.swift */; };
+		A47BDFEA202AFD0100BF83FD /* NewTeamAppAssistanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47BDFE9202AFD0100BF83FD /* NewTeamAppAssistanceVC.swift */; };
+		A47BDFEC202AFD2700BF83FD /* ChallengeAppAssistanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47BDFEB202AFD2700BF83FD /* ChallengeAppAssistanceVC.swift */; };
+		A47BDFEE202AFD4200BF83FD /* TournamentAppAssistanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47BDFED202AFD4200BF83FD /* TournamentAppAssistanceVC.swift */; };
+		A47BDFF0202AFD5E00BF83FD /* ScoreKeepingAppAssistantVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47BDFEF202AFD5E00BF83FD /* ScoreKeepingAppAssistantVC.swift */; };
+		A47BDFF2202AFD7600BF83FD /* ThroughoutAppAssistanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47BDFF1202AFD7600BF83FD /* ThroughoutAppAssistanceVC.swift */; };
 		D2669407EEF013787094B41D /* Pods_Game_OnTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78721CB0984BA5822B773E0F /* Pods_Game_OnTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -114,8 +118,12 @@
 		A461CEF32029B6FD00E275CB /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		A461CEF52029B72900E275CB /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		A461CEF72029C25000E275CB /* FeedbackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackVC.swift; sourceTree = "<group>"; };
-		A461CEF92029C26500E275CB /* AppAssistanceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssistanceVC.swift; sourceTree = "<group>"; };
 		A461CEFB2029C27400E275CB /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		A47BDFE9202AFD0100BF83FD /* NewTeamAppAssistanceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTeamAppAssistanceVC.swift; sourceTree = "<group>"; };
+		A47BDFEB202AFD2700BF83FD /* ChallengeAppAssistanceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeAppAssistanceVC.swift; sourceTree = "<group>"; };
+		A47BDFED202AFD4200BF83FD /* TournamentAppAssistanceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentAppAssistanceVC.swift; sourceTree = "<group>"; };
+		A47BDFEF202AFD5E00BF83FD /* ScoreKeepingAppAssistantVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreKeepingAppAssistantVC.swift; sourceTree = "<group>"; };
+		A47BDFF1202AFD7600BF83FD /* ThroughoutAppAssistanceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThroughoutAppAssistanceVC.swift; sourceTree = "<group>"; };
 		A8573EB84CFBA3A60C700654 /* Pods-Game OnTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Game OnTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Game OnTests/Pods-Game OnTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E222CADC2E4220A64D9BE6B8 /* Pods-Game OnTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Game OnTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Game OnTests/Pods-Game OnTests.release.xcconfig"; sourceTree = "<group>"; };
 		E5E072EA63FCFB2B5A29B6E6 /* Pods-Game OnUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Game OnUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Game OnUITests/Pods-Game OnUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -232,8 +240,12 @@
 				A461CEF32029B6FD00E275CB /* NotificationsViewController.swift */,
 				A461CEF52029B72900E275CB /* ProfileVC.swift */,
 				A461CEF72029C25000E275CB /* FeedbackVC.swift */,
-				A461CEF92029C26500E275CB /* AppAssistanceVC.swift */,
 				A461CEFB2029C27400E275CB /* AboutVC.swift */,
+				A47BDFE9202AFD0100BF83FD /* NewTeamAppAssistanceVC.swift */,
+				A47BDFEB202AFD2700BF83FD /* ChallengeAppAssistanceVC.swift */,
+				A47BDFED202AFD4200BF83FD /* TournamentAppAssistanceVC.swift */,
+				A47BDFEF202AFD5E00BF83FD /* ScoreKeepingAppAssistantVC.swift */,
+				A47BDFF1202AFD7600BF83FD /* ThroughoutAppAssistanceVC.swift */,
 			);
 			path = HomeVC;
 			sourceTree = "<group>";
@@ -593,22 +605,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A47BDFF0202AFD5E00BF83FD /* ScoreKeepingAppAssistantVC.swift in Sources */,
 				A460602020259D060026DFA0 /* ChallengeVC.swift in Sources */,
 				A460602820259D670026DFA0 /* GroundVC.swift in Sources */,
 				A460603220259DEC0026DFA0 /* MyTournamentChildVC.swift in Sources */,
 				A460601C20259CDA0026DFA0 /* MyTeamChildVC.swift in Sources */,
+				A47BDFEA202AFD0100BF83FD /* NewTeamAppAssistanceVC.swift in Sources */,
 				A4606007202592BD0026DFA0 /* HomeVC.swift in Sources */,
 				A460602620259D550026DFA0 /* ChallengeInviteChildVC.swift in Sources */,
 				A460602420259D310026DFA0 /* MyMatchesChildVC.swift in Sources */,
 				A460601E20259CF10026DFA0 /* TeamInviteChildVC.swift in Sources */,
-				A461CEFA2029C26500E275CB /* AppAssistanceVC.swift in Sources */,
 				A460601820259C960026DFA0 /* TeamsChildVC.swift in Sources */,
 				A460602C20259D940026DFA0 /* MyGroundsChildVC.swift in Sources */,
 				A43677F22024414A0023EB08 /* ViewController.swift in Sources */,
 				A4606009202592DF0026DFA0 /* NewsChildVC.swift in Sources */,
 				A461CEF62029B72900E275CB /* ProfileVC.swift in Sources */,
 				A461CEFC2029C27400E275CB /* AboutVC.swift in Sources */,
+				A47BDFF2202AFD7600BF83FD /* ThroughoutAppAssistanceVC.swift in Sources */,
 				A460603420259E000026DFA0 /* InviteChildVC.swift in Sources */,
+				A47BDFEC202AFD2700BF83FD /* ChallengeAppAssistanceVC.swift in Sources */,
 				A460600F2025933C0026DFA0 /* LiveChildVC.swift in Sources */,
 				A460602A20259D810026DFA0 /* AllGroundsChildVC.swift in Sources */,
 				A461CEF82029C25000E275CB /* FeedbackVC.swift in Sources */,
@@ -616,6 +631,7 @@
 				A460602220259D1F0026DFA0 /* MyChallengeChildVC.swift in Sources */,
 				A461CEF42029B6FD00E275CB /* NotificationsViewController.swift in Sources */,
 				A43677F02024414A0023EB08 /* AppDelegate.swift in Sources */,
+				A47BDFEE202AFD4200BF83FD /* TournamentAppAssistanceVC.swift in Sources */,
 				A460603020259DC30026DFA0 /* TournamentChildVC.swift in Sources */,
 				A460600B202593080026DFA0 /* ResultsChildVC.swift in Sources */,
 				A460601620259C780026DFA0 /* TeamVC.swift in Sources */,

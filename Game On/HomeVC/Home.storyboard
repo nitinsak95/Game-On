@@ -37,6 +37,181 @@
             </objects>
             <point key="canvasLocation" x="1202" y="133"/>
         </scene>
+        <!--New Team App AssistanceVC-->
+        <scene sceneID="prf-ek-T32">
+            <objects>
+                <viewController storyboardIdentifier="newTeam" id="nss-aP-AA1" customClass="NewTeamAppAssistanceVC" customModule="Game_On" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o38-mc-6ci">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Team Assistance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39Y-BF-G6k">
+                                <rect key="frame" x="104" y="323" width="167.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hld-nD-bAG">
+                                <rect key="frame" x="335" y="20" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icon_cross"/>
+                                <connections>
+                                    <action selector="btBack:" destination="nss-aP-AA1" eventType="touchUpInside" id="WFe-8c-AEu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="39Y-BF-G6k" firstAttribute="centerX" secondItem="o38-mc-6ci" secondAttribute="centerX" id="DhB-Y3-twG"/>
+                            <constraint firstItem="39Y-BF-G6k" firstAttribute="centerY" secondItem="o38-mc-6ci" secondAttribute="centerY" id="REc-Hm-fuD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ugw-sW-Iz3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pax-uF-8Eh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908" y="832.53373313343332"/>
+        </scene>
+        <!--Challenge App AssistanceVC-->
+        <scene sceneID="l1H-BQ-EFl">
+            <objects>
+                <viewController storyboardIdentifier="challenge" id="aAz-X8-UEn" customClass="ChallengeAppAssistanceVC" customModule="Game_On" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HCv-pK-kBG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Challenge App Assistance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDc-lC-boD">
+                                <rect key="frame" x="88" y="323" width="199" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXX-Ko-P7k">
+                                <rect key="frame" x="335" y="20" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icon_cross"/>
+                                <connections>
+                                    <action selector="btBack:" destination="aAz-X8-UEn" eventType="touchUpInside" id="LcM-Hd-zbX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DDc-lC-boD" firstAttribute="centerY" secondItem="HCv-pK-kBG" secondAttribute="centerY" id="Tnf-SH-vVr"/>
+                            <constraint firstItem="DDc-lC-boD" firstAttribute="centerX" secondItem="HCv-pK-kBG" secondAttribute="centerX" id="tPF-NK-mFF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="npj-Mb-84G"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jsa-e3-Kyh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1637.5999999999999" y="832.53373313343332"/>
+        </scene>
+        <!--Tournament App AssistanceVC-->
+        <scene sceneID="e5u-tS-pRq">
+            <objects>
+                <viewController storyboardIdentifier="tournament" id="Py1-Bh-Ecz" customClass="TournamentAppAssistanceVC" customModule="Game_On" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ly6-MC-UrO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tournament App Assistance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyg-GQ-Z34">
+                                <rect key="frame" x="80.5" y="323" width="214.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QP7-0H-t5G">
+                                <rect key="frame" x="335" y="20" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icon_cross"/>
+                                <connections>
+                                    <action selector="btBack:" destination="Py1-Bh-Ecz" eventType="touchUpInside" id="uav-kl-dcF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lyg-GQ-Z34" firstAttribute="centerY" secondItem="Ly6-MC-UrO" secondAttribute="centerY" id="59D-ke-gv4"/>
+                            <constraint firstItem="lyg-GQ-Z34" firstAttribute="centerX" secondItem="Ly6-MC-UrO" secondAttribute="centerX" id="yI9-vZ-IzS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0JG-ld-E1w"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ONr-9B-GV8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2380" y="832.53373313343332"/>
+        </scene>
+        <!--Score Keeping App AssistantVC-->
+        <scene sceneID="WfZ-N7-QAF">
+            <objects>
+                <viewController storyboardIdentifier="scorekeeping" id="siv-dY-W77" customClass="ScoreKeepingAppAssistantVC" customModule="Game_On" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wvb-yS-jMM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ScoreKeeping App Assistance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTc-Px-Vto">
+                                <rect key="frame" x="73" y="323" width="229" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8K-ub-S4l">
+                                <rect key="frame" x="335" y="20" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icon_cross"/>
+                                <connections>
+                                    <action selector="btBack:" destination="siv-dY-W77" eventType="touchUpInside" id="304-Zq-CzD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dTc-Px-Vto" firstAttribute="centerX" secondItem="Wvb-yS-jMM" secondAttribute="centerX" id="NFX-0P-v8T"/>
+                            <constraint firstItem="dTc-Px-Vto" firstAttribute="centerY" secondItem="Wvb-yS-jMM" secondAttribute="centerY" id="bBh-RC-bDU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VtE-eG-VeF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l1i-hV-1AY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3101.5999999999999" y="832.53373313343332"/>
+        </scene>
+        <!--Throughout App AssistanceVC-->
+        <scene sceneID="V5f-as-xpA">
+            <objects>
+                <viewController storyboardIdentifier="throughout" id="DYq-Jo-s6G" customClass="ThroughoutAppAssistanceVC" customModule="Game_On" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="elB-BS-ulX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assistance throughout aplication" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00j-ps-gMc">
+                                <rect key="frame" x="62.5" y="323" width="250.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4o-v2-i8i">
+                                <rect key="frame" x="335" y="20" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icon_cross"/>
+                                <connections>
+                                    <action selector="btBack:" destination="DYq-Jo-s6G" eventType="touchUpInside" id="Mya-2p-A2f"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="00j-ps-gMc" firstAttribute="centerX" secondItem="elB-BS-ulX" secondAttribute="centerX" id="fSV-rP-pEy"/>
+                            <constraint firstItem="00j-ps-gMc" firstAttribute="centerY" secondItem="elB-BS-ulX" secondAttribute="centerY" id="lUe-Yv-H9r"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BVW-1n-8Gn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MZP-yn-Kfc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3821.5999999999999" y="832.53373313343332"/>
+        </scene>
         <!--Results ChildVC-->
         <scene sceneID="RF4-E2-ckO">
             <objects>
@@ -119,4 +294,7 @@
             <point key="canvasLocation" x="3255" y="132"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_cross" width="24" height="24"/>
+    </resources>
 </document>

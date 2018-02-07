@@ -61,7 +61,40 @@ class HomeVC: ButtonBarPagerTabStripViewController {
         }
     
     func appAssisstanceHandler(alert: UIAlertAction) {
-        let viewController: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "appAssistance") as! AppAssistanceVC
+        let alertController = UIAlertController(title: "Welcome", message: "Select where you need assistance", preferredStyle: .alert)
+        
+        alertController.addAction(UIAlertAction(title: "How to create new team", style: .default, handler: self.newTeam))
+        alertController.addAction(UIAlertAction(title: "How to create challenge", style: .default, handler: self.challenge))
+        alertController.addAction(UIAlertAction(title: "How to create tournament", style: .default, handler: self.tournament))
+        alertController.addAction(UIAlertAction(title: "How to do scorekeeping", style: .default, handler: self.scorekeeping))
+        alertController.addAction(UIAlertAction(title: "Assist throughout application", style: .default, handler: self.assistanceThroughout))
+        
+        self.present(alertController, animated: true, completion:  nil)
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+    }
+    
+    func newTeam (alert: UIAlertAction) {
+        let viewController: UIViewController = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "newTeam") as! NewTeamAppAssistanceVC
+        self.present(viewController, animated: false, completion: nil)
+        }
+    
+    func challenge (alert: UIAlertAction) {
+        let viewController: UIViewController = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "challenge") as! ChallengeAppAssistanceVC
+        self.present(viewController, animated: false, completion: nil)
+    }
+    
+    func tournament (alert: UIAlertAction) {
+        let viewController: UIViewController = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "tournament") as! TournamentAppAssistanceVC
+        self.present(viewController, animated: false, completion: nil)
+    }
+    
+    func scorekeeping (alert: UIAlertAction) {
+        let viewController: UIViewController = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "scorekeeping") as! ScoreKeepingAppAssistantVC
+        self.present(viewController, animated: false, completion: nil)
+    }
+    
+    func assistanceThroughout (alert: UIAlertAction) {
+        let viewController: UIViewController = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "throughout") as! ThroughoutAppAssistanceVC
         self.present(viewController, animated: false, completion: nil)
     }
     
