@@ -251,13 +251,6 @@
 			path = HomeChildVC;
 			sourceTree = "<group>";
 		};
-		A44FCE68202D77970023345E /* TeamChildVC */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TeamChildVC;
-			sourceTree = "<group>";
-		};
 		A46060102025971D0026DFA0 /* HomeVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,7 +274,6 @@
 				A460601720259C960026DFA0 /* TeamsChildVC.swift */,
 				A460601B20259CDA0026DFA0 /* MyTeamChildVC.swift */,
 				A460601D20259CF10026DFA0 /* TeamInviteChildVC.swift */,
-				A44FCE68202D77970023345E /* TeamChildVC */,
 			);
 			path = TeamVC;
 			sourceTree = "<group>";
