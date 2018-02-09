@@ -228,24 +228,47 @@
 			path = "Game OnUITests";
 			sourceTree = "<group>";
 		};
-		A46060102025971D0026DFA0 /* HomeVC */ = {
+		A44FCE66202D75910023345E /* App Assistance */ = {
 			isa = PBXGroup;
 			children = (
-				A440C9E92029757800B86AB3 /* Home.storyboard */,
-				A4606006202592BD0026DFA0 /* HomeVC.swift */,
-				A4606008202592DF0026DFA0 /* NewsChildVC.swift */,
-				A460600A202593080026DFA0 /* ResultsChildVC.swift */,
-				A460600C2025931F0026DFA0 /* UpcomingChildVC.swift */,
-				A460600E2025933C0026DFA0 /* LiveChildVC.swift */,
-				A461CEF32029B6FD00E275CB /* NotificationsViewController.swift */,
-				A461CEF52029B72900E275CB /* ProfileVC.swift */,
-				A461CEF72029C25000E275CB /* FeedbackVC.swift */,
-				A461CEFB2029C27400E275CB /* AboutVC.swift */,
 				A47BDFE9202AFD0100BF83FD /* NewTeamAppAssistanceVC.swift */,
 				A47BDFEB202AFD2700BF83FD /* ChallengeAppAssistanceVC.swift */,
 				A47BDFED202AFD4200BF83FD /* TournamentAppAssistanceVC.swift */,
 				A47BDFEF202AFD5E00BF83FD /* ScoreKeepingAppAssistantVC.swift */,
 				A47BDFF1202AFD7600BF83FD /* ThroughoutAppAssistanceVC.swift */,
+			);
+			path = "App Assistance";
+			sourceTree = "<group>";
+		};
+		A44FCE67202D75F50023345E /* HomeChildVC */ = {
+			isa = PBXGroup;
+			children = (
+				A4606008202592DF0026DFA0 /* NewsChildVC.swift */,
+				A460600A202593080026DFA0 /* ResultsChildVC.swift */,
+				A460600C2025931F0026DFA0 /* UpcomingChildVC.swift */,
+				A460600E2025933C0026DFA0 /* LiveChildVC.swift */,
+			);
+			path = HomeChildVC;
+			sourceTree = "<group>";
+		};
+		A44FCE68202D77970023345E /* TeamChildVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TeamChildVC;
+			sourceTree = "<group>";
+		};
+		A46060102025971D0026DFA0 /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				A440C9E92029757800B86AB3 /* Home.storyboard */,
+				A4606006202592BD0026DFA0 /* HomeVC.swift */,
+				A461CEF32029B6FD00E275CB /* NotificationsViewController.swift */,
+				A461CEF52029B72900E275CB /* ProfileVC.swift */,
+				A461CEF72029C25000E275CB /* FeedbackVC.swift */,
+				A461CEFB2029C27400E275CB /* AboutVC.swift */,
+				A44FCE67202D75F50023345E /* HomeChildVC */,
+				A44FCE66202D75910023345E /* App Assistance */,
 			);
 			path = HomeVC;
 			sourceTree = "<group>";
@@ -258,6 +281,7 @@
 				A460601720259C960026DFA0 /* TeamsChildVC.swift */,
 				A460601B20259CDA0026DFA0 /* MyTeamChildVC.swift */,
 				A460601D20259CF10026DFA0 /* TeamInviteChildVC.swift */,
+				A44FCE68202D77970023345E /* TeamChildVC */,
 			);
 			path = TeamVC;
 			sourceTree = "<group>";
@@ -506,11 +530,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Game On/Pods-Game On-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KCFloatingActionButton/KCFloatingActionButton.framework",
 				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
 				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KCFloatingActionButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
 			);

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KCFloatingActionButton
 
 class ProfileVC: UIViewController {
 
@@ -15,6 +16,13 @@ class ProfileVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let FAB = KCFloatingActionButton()
+        FAB.addItem("Change Name", icon: UIImage(named: "icon_back")!)
+        FAB.addItem("Change profile pic", icon: UIImage(named: "icon_back")!)
+        FAB.addItem("Invite App", icon: UIImage(named: "icon_back")!)
+        FAB.addItem("Sports Preference", icon: UIImage(named: "icon_back")!)
+        self.view.addSubview(FAB)
 
         self.tintButtonImage(button: btBack, image: (btBack.imageView?.image)!, color: .white)
          self.tintButtonImage(button: btMore, image: (btMore.imageView?.image)!, color: .white)
