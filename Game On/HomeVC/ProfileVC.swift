@@ -14,6 +14,10 @@ class ProfileVC: UIViewController {
     @IBOutlet weak var btBack: UIButton!
     @IBOutlet weak var btMore: UIButton!
     
+    @IBOutlet weak var btPendingInvites: UIButton!
+    @IBOutlet weak var btMyUpcomingMatch: UIButton!
+    @IBOutlet weak var btMyGameResults: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,7 +29,11 @@ class ProfileVC: UIViewController {
         self.view.addSubview(FAB)
 
         self.tintButtonImage(button: btBack, image: (btBack.imageView?.image)!, color: .white)
-         self.tintButtonImage(button: btMore, image: (btMore.imageView?.image)!, color: .white)
+        self.tintButtonImage(button: btMore, image: (btMore.imageView?.image)!, color: .white)
+        
+        btPendingInvites.titleLabel?.textAlignment = .center
+        btMyUpcomingMatch.titleLabel?.textAlignment = .center
+        btMyGameResults.titleLabel?.textAlignment = .center
     }
     
     @IBAction func btBack(_ sender: UIButton) {
