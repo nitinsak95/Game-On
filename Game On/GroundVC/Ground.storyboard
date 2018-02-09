@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -57,9 +58,12 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="100.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaunchScreenBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="P3b-to-sxu">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreenBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="P3b-to-sxu">
                                                     <rect key="frame" x="15" y="18" width="55" height="55"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="55" id="GPc-q7-dSb"/>
+                                                        <constraint firstAttribute="width" constant="55" id="JOL-mX-SP7"/>
+                                                    </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -67,32 +71,56 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Malleswaram 18th Cross Bus Station" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOI-l1-2jg">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Malleswaram 18th Cross Bus Station" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOI-l1-2jg">
                                                     <rect key="frame" x="78" y="11" width="282" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="282" id="UeM-Vr-Ph1"/>
+                                                        <constraint firstAttribute="height" constant="21" id="WaO-l6-q1d"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4 days ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHM-mg-VcK">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 days ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHM-mg-VcK">
                                                     <rect key="frame" x="86" y="35" width="76" height="18"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="76" id="BNd-ZI-qpX"/>
+                                                        <constraint firstAttribute="height" constant="18" id="jDM-gB-SVt"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_location" translatesAutoresizingMaskIntoConstraints="NO" id="3Vk-EN-Htc">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_location" translatesAutoresizingMaskIntoConstraints="NO" id="3Vk-EN-Htc">
                                                     <rect key="frame" x="78" y="57" width="20" height="20"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="20" id="mKk-cc-oqw"/>
+                                                        <constraint firstAttribute="height" constant="20" id="noj-lq-O7m"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bengaluru" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMA-vr-T7l">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bengaluru" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMA-vr-T7l">
                                                     <rect key="frame" x="100" y="56" width="227" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="227" id="VN6-il-ufo"/>
+                                                        <constraint firstAttribute="height" constant="21" id="YuM-dO-Z9t"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="SMA-vr-T7l" firstAttribute="top" secondItem="fHM-mg-VcK" secondAttribute="bottom" constant="3" id="1gf-ap-KsG"/>
+                                                <constraint firstItem="fHM-mg-VcK" firstAttribute="leading" secondItem="P3b-to-sxu" secondAttribute="trailing" constant="16" id="9uK-IH-pGr"/>
+                                                <constraint firstItem="HOI-l1-2jg" firstAttribute="top" secondItem="wdd-L4-SLl" secondAttribute="top" constant="11" id="EHD-hv-N7G"/>
+                                                <constraint firstItem="3Vk-EN-Htc" firstAttribute="leading" secondItem="P3b-to-sxu" secondAttribute="trailing" constant="8" id="Euv-qU-pKd"/>
+                                                <constraint firstItem="fHM-mg-VcK" firstAttribute="top" secondItem="HOI-l1-2jg" secondAttribute="bottom" constant="3" id="V8u-lK-RNx"/>
+                                                <constraint firstItem="P3b-to-sxu" firstAttribute="leading" secondItem="wdd-L4-SLl" secondAttribute="leadingMargin" id="bjv-UA-Lk3"/>
+                                                <constraint firstItem="3Vk-EN-Htc" firstAttribute="top" secondItem="fHM-mg-VcK" secondAttribute="bottom" constant="4" id="ckK-4W-0pw"/>
+                                                <constraint firstAttribute="trailing" secondItem="HOI-l1-2jg" secondAttribute="trailing" constant="15" id="hpJ-al-YZX"/>
+                                                <constraint firstItem="P3b-to-sxu" firstAttribute="top" secondItem="wdd-L4-SLl" secondAttribute="topMargin" constant="7" id="xoC-SZ-ZU5"/>
+                                                <constraint firstItem="SMA-vr-T7l" firstAttribute="leading" secondItem="3Vk-EN-Htc" secondAttribute="trailing" constant="2" id="zti-7g-1qV"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
