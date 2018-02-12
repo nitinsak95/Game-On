@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8971FC4EDF7886094E03B1C8 /* Pods_Game_On.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C87867597CC66AF35F03CA /* Pods_Game_On.framework */; };
 		8F3C57FFD20115A97D8F15FB /* Pods_Game_OnUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C139721B2A6C33ABA53D673 /* Pods_Game_OnUITests.framework */; };
+		A413022920317554009F53E2 /* GroundVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A413022820317554009F53E2 /* GroundVC1.swift */; };
 		A43677F02024414A0023EB08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43677EF2024414A0023EB08 /* AppDelegate.swift */; };
 		A43677F22024414A0023EB08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43677F12024414A0023EB08 /* ViewController.swift */; };
 		A43677F52024414A0023EB08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A43677F32024414A0023EB08 /* Main.storyboard */; };
@@ -34,7 +35,6 @@
 		A460602220259D1F0026DFA0 /* MyChallengeChildVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460602120259D1F0026DFA0 /* MyChallengeChildVC.swift */; };
 		A460602420259D310026DFA0 /* MyMatchesChildVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460602320259D310026DFA0 /* MyMatchesChildVC.swift */; };
 		A460602620259D550026DFA0 /* ChallengeInviteChildVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460602520259D550026DFA0 /* ChallengeInviteChildVC.swift */; };
-		A460602820259D670026DFA0 /* GroundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460602720259D670026DFA0 /* GroundVC.swift */; };
 		A460602A20259D810026DFA0 /* AllGroundsChildVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460602920259D810026DFA0 /* AllGroundsChildVC.swift */; };
 		A460602C20259D940026DFA0 /* MyGroundsChildVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460602B20259D940026DFA0 /* MyGroundsChildVC.swift */; };
 		A460602E20259DAC0026DFA0 /* TournamentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460602D20259DAC0026DFA0 /* TournamentVC.swift */; };
@@ -77,6 +77,7 @@
 		60C87867597CC66AF35F03CA /* Pods_Game_On.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Game_On.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78721CB0984BA5822B773E0F /* Pods_Game_OnTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Game_OnTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A13374FC85C883164AC6C7D1 /* Pods-Game On.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Game On.release.xcconfig"; path = "Pods/Target Support Files/Pods-Game On/Pods-Game On.release.xcconfig"; sourceTree = "<group>"; };
+		A413022820317554009F53E2 /* GroundVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundVC1.swift; sourceTree = "<group>"; };
 		A43677EC2024414A0023EB08 /* Game On.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Game On.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A43677EF2024414A0023EB08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A43677F12024414A0023EB08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,7 +109,6 @@
 		A460602120259D1F0026DFA0 /* MyChallengeChildVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChallengeChildVC.swift; sourceTree = "<group>"; };
 		A460602320259D310026DFA0 /* MyMatchesChildVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMatchesChildVC.swift; sourceTree = "<group>"; };
 		A460602520259D550026DFA0 /* ChallengeInviteChildVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeInviteChildVC.swift; sourceTree = "<group>"; };
-		A460602720259D670026DFA0 /* GroundVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundVC.swift; sourceTree = "<group>"; };
 		A460602920259D810026DFA0 /* AllGroundsChildVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroundsChildVC.swift; sourceTree = "<group>"; };
 		A460602B20259D940026DFA0 /* MyGroundsChildVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroundsChildVC.swift; sourceTree = "<group>"; };
 		A460602D20259DAC0026DFA0 /* TournamentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentVC.swift; sourceTree = "<group>"; };
@@ -294,7 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				A440C9EF2029765F00B86AB3 /* Ground.storyboard */,
-				A460602720259D670026DFA0 /* GroundVC.swift */,
+				A413022820317554009F53E2 /* GroundVC1.swift */,
 				A460602920259D810026DFA0 /* AllGroundsChildVC.swift */,
 				A460602B20259D940026DFA0 /* MyGroundsChildVC.swift */,
 			);
@@ -629,7 +629,7 @@
 			files = (
 				A47BDFF0202AFD5E00BF83FD /* ScoreKeepingAppAssistantVC.swift in Sources */,
 				A460602020259D060026DFA0 /* ChallengeVC.swift in Sources */,
-				A460602820259D670026DFA0 /* GroundVC.swift in Sources */,
+				A413022920317554009F53E2 /* GroundVC1.swift in Sources */,
 				A460603220259DEC0026DFA0 /* MyTournamentChildVC.swift in Sources */,
 				A460601C20259CDA0026DFA0 /* MyTeamChildVC.swift in Sources */,
 				A47BDFEA202AFD0100BF83FD /* NewTeamAppAssistanceVC.swift in Sources */,
