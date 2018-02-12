@@ -18,19 +18,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreenBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="OHU-WX-opt">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mrO-09-WN5">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game On" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3K-Ts-LuR">
+                                <rect key="frame" x="130" y="316" width="114" height="35"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="29"/>
+                                <color key="textColor" red="1" green="0.32156862749999998" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.sportelos.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUD-lA-sTo">
+                                <rect key="frame" x="16" y="639" width="343" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="c2g-KK-s0e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="1" green="0.32156862749999998" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.89803921568627454" green="0.22352941176470587" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <accessibility key="accessibilityConfiguration" label="gkgkmg">
                             <bool key="isElement" value="NO"/>
                         </accessibility>
                         <constraints>
-                            <constraint firstItem="OHU-WX-opt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="35Z-Pv-bua"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OHU-WX-opt" secondAttribute="trailing" id="NbY-fe-ygj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OHU-WX-opt" secondAttribute="bottom" id="OxP-VG-rVa"/>
-                            <constraint firstItem="OHU-WX-opt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Pqi-f3-k49"/>
+                            <constraint firstItem="mrO-09-WN5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8Zs-IC-H2d"/>
+                            <constraint firstItem="u3K-Ts-LuR" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="I2G-l5-32V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oUD-lA-sTo" secondAttribute="bottom" constant="13" id="JfN-Qi-Pxt"/>
+                            <constraint firstItem="mrO-09-WN5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JgS-zj-gT7"/>
+                            <constraint firstItem="oUD-lA-sTo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bn0-LY-qlK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oUD-lA-sTo" secondAttribute="trailing" constant="16" id="eDs-B5-mZB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mrO-09-WN5" secondAttribute="bottom" id="gIS-xB-2qL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mrO-09-WN5" secondAttribute="trailing" id="qQJ-7e-7w3"/>
+                            <constraint firstItem="u3K-Ts-LuR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="vzQ-vj-faI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -40,7 +60,4 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="LaunchScreenBackGround" width="813" height="540"/>
-    </resources>
 </document>
